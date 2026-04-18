@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Number System Converter — #17 of 100 Projects</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <header>
+      <div class="badge">#17 / 100 Projects</div>
+      <h1>Number System Converter</h1>
+      <p class="subtitle">Type in any field — all others update live</p>
+    </header>
+
+    <main>
+      <div class="converter-panels">
+        <div class="panel panel-decimal">
+          <div class="panel-header">
+            <span class="base-label">Base 10</span>
+            <span class="base-name">Decimal</span>
+          </div>
+          <input type="text" id="input-decimal" class="base-input" placeholder="e.g. 42" maxlength="15" autocomplete="off" />
+          <div class="valid-chars">Digits: 0–9</div>
+        </div>
+
+        <div class="panel panel-binary">
+          <div class="panel-header">
+            <span class="base-label">Base 2</span>
+            <span class="base-name">Binary</span>
+          </div>
+          <input type="text" id="input-binary" class="base-input" placeholder="e.g. 101010" maxlength="52" autocomplete="off" />
+          <div class="valid-chars">Digits: 0–1</div>
+        </div>
+
+        <div class="panel panel-octal">
+          <div class="panel-header">
+            <span class="base-label">Base 8</span>
+            <span class="base-name">Octal</span>
+          </div>
+          <input type="text" id="input-octal" class="base-input" placeholder="e.g. 52" maxlength="18" autocomplete="off" />
+          <div class="valid-chars">Digits: 0–7</div>
+        </div>
+
+        <div class="panel panel-hex">
+          <div class="panel-header">
+            <span class="base-label">Base 16</span>
+            <span class="base-name">Hexadecimal</span>
+          </div>
+          <input type="text" id="input-hex" class="base-input" placeholder="e.g. 2A" maxlength="13" autocomplete="off" />
+          <div class="valid-chars">Digits: 0–9, A–F</div>
+        </div>
+      </div>
+
+      <div class="explanation-card" id="explanation-card">
+        <h3>Step-by-step Explanation</h3>
+        <div id="explanation-body">Enter a value in any field above to see the conversion breakdown.</div>
+      </div>
+
+      <div class="reference-card">
+        <h3>Powers of 2 — Quick Reference</h3>
+        <div class="powers-table" id="powers-table"></div>
+      </div>
+    </main>
+
+    <footer>Part of <a href="https://github.com/manzi" target="_blank" rel="noopener">Manzi's 100 GitHub Projects Roadmap</a></footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
